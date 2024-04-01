@@ -11,7 +11,7 @@ class HotelManagementSystem:
      def __init__(self,root) :
           self.root=root
           self.root.title("Hotel Management System")
-          self.root.geometry('1550x800+0+0')
+          self.root.geometry('1530x800+0+0')
           self.root.resizable(False,False)
 
           #=========image 1 is hear================
@@ -92,7 +92,7 @@ class HotelManagementSystem:
           labimg.place(x=0,y=265,width=230,height=165) 
 
           img5=Image.open("Image/food1.jpg")
-          # img3.resize((1550,140),Image.Resampling.LANCZOS)
+          img3.resize((1550,140),Image.Resampling.LANCZOS)
           self.photoimg5=ImageTk.PhotoImage(img5)
 
           labimg=Label(main_frame,image=self.photoimg5,bd=4,relief=RIDGE)

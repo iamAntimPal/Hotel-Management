@@ -36,7 +36,7 @@ class Roombooking :
 
           img2=Image.open("Image/logo2.jpg")
 
-          # img2.resize((100,40),Image.ANTIALIAS)
+          # img2.resize((100,40),Image.LANCZOS)
           self.photoimg2=ImageTk.PhotoImage(img2)
 
           labimg2=Label(self.root,image=self.photoimg2,bd=0,relief=RIDGE )
@@ -541,13 +541,13 @@ class Roombooking :
           
      def show_calendar_checkin(self, event, entry):
         top = Toplevel(self.root)
-        cal = Calendar(top, selectmode='day', year=2024, month=3, day=24)
+        cal = Calendar(top, selectmode='day', year=2024, month=4, day=1)
         cal.pack(fill='both', expand=True)
         cal.bind('<<CalendarSelected>>', lambda event, entry=entry, top=top: self.set_date_checkin(event, entry, top))
 
      def show_calendar_checkout(self, event, entry):
         top = Toplevel(self.root)
-        cal = Calendar(top, selectmode='day', year=2024, month=3, day=24)
+        cal = Calendar(top, selectmode='day', year=2024, month=3, day=8)
         cal.pack(fill='both', expand=True)
         cal.bind('<<CalendarSelected>>', lambda event, entry=entry, top=top: self.set_date_checkout(event, entry, top))
 

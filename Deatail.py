@@ -22,7 +22,7 @@ class Detail_win :
         lbl_title.place(x=0,y=0,width=1295,height=50)
          #=======================Logo==================
         img2=Image.open("Image/logo2.jpg")
-        # img2.resize((100,40),Image.ANTIALIAS)
+        # img2.resize((100,40),Image.LANCZOS)
         self.photoimg2=ImageTk.PhotoImage(img2)
         labimg2=Label(self.root,image=self.photoimg2,bd=0,relief=RIDGE )
         labimg2.place(x=5,y=2,width=100,height=40)
