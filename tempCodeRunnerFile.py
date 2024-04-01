@@ -1,1 +1,1 @@
-show_calendar_checkin
+host="localhost", user="root",password="Antim@123",database="Hotelmanagement"

@@ -278,7 +278,7 @@ class Register:
         self.txt_confirm_pswd = ttk.Entry(frame,textvariable=self.var_confpass,font=("arial",15,"bold"))
         self.txt_confirm_pswd.place(x=370,y=340,width=250)
 
-        ############ CHECK BUTTON ############
+        ############ CHECK BUTTON ##############
 
         self.var_check_btn=IntVar()
         checkbtn = Checkbutton(frame,variable=self.var_check_btn,text="I AGREE THE TEARMS AND CONDITIONS.",font=("arial",11,"bold"),onvalue=1,offvalue=0)
