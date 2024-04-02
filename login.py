@@ -269,13 +269,13 @@ class Register:
         pswd=Label(frame,text="PASSWORD",font=("arial",15,"bold"),bg="white",fg="black")
         pswd.place(x=50,y=310)
 
-        self.txt_pswd = ttk.Entry(frame,textvariable=self.var_pass,font=("arial",15,"bold"))
+        self.txt_pswd = ttk.Entry(frame,textvariable=self.var_pass,font=("arial",15,"bold"),show="*")
         self.txt_pswd.place(x=50,y=340,width=250)
 
         confirm_pswd=Label(frame,text="CONFIRM PASSWORD",font=("arial",15,"bold"),bg="white",fg="black")
         confirm_pswd.place(x=370,y=310)
 
-        self.txt_confirm_pswd = ttk.Entry(frame,textvariable=self.var_confpass,font=("arial",15,"bold"))
+        self.txt_confirm_pswd = ttk.Entry(frame,textvariable=self.var_confpass,font=("arial",15,"bold"),show="*")
         self.txt_confirm_pswd.place(x=370,y=340,width=250)
 
         ############ CHECK BUTTON ##############
