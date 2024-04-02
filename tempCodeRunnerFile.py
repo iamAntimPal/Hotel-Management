@@ -1,1 +1,0 @@
-host="localhost", user="root",password="Antim@123",database="Hotelmanagement"
